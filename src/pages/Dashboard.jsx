@@ -1,10 +1,10 @@
 import React from "react";
-import styled from "styled-components";
+import './DashBoard.css'
 import Auth from "../components/Auth";
 
 function Dashboard() {
 	return (
-		<Wrapepr>
+		<div className="mainSection">
 			<div className="container px-md-5">
 				<div className="row">
 					<div className="col-12 col-md-5 shadow auth mx-md-4 ">
@@ -13,7 +13,7 @@ function Dashboard() {
 							<Auth />
 						</div>
 					</div>
-					<div className="col-12 col-md-6 explained">
+					<div className="d-sm-col d-md-block col-12 col-md-6 explained">
 						<p>About</p>
 						<h1>Evangadi Networks</h1>
 						<p>
@@ -32,55 +32,55 @@ function Dashboard() {
 					</div>
 				</div>
 			</div>
-		</Wrapepr>
+		</div>
 	);
 }
 
-const Wrapepr = styled.section`
-	& {
-		background-repeat: no-repeat;
-		background-size: cover;
-		padding-top: 140px;
-		margin-bottom: 50px;
-		background-image: url("./bg-svg-f.svg");
-	}
-	.auth {
-		background-color: white;
-		border-radius: 5px;
-		height: auto;
-		min-height: 450px;
-		padding: 15px 30px 25px;
-	}
-	.text-danger {
-		text-align: center;
-		color: red;
-		font-family: monospace;
-	}
-	.explained {
-		padding-left: 25px;
-		p:first-child {
-			color: #fe8402;
-			margin-bottom: 5px;
-			font-size: 1.1rem;
-		}
-		h1 {
-			color: #4b456f;
-			font-size: 2.5rem;
-			margin-bottom: 25px;
-		}
-		button {
-			background-color: #fe8402;
-			border: none;
-			color: white;
-			border-radius: 5px;
-			padding: 5px 15px;
-		}
-	}
-	@media (max-width: 768px) {
-		.auth {
-			width: 90%;
-			margin: 25px auto;
-		}
-	}
-`;
+// const Wrapepr = styled.section`
+// 	& {
+// 		background-repeat: no-repeat;
+// 		background-size: cover;
+// 		padding-top: 140px;
+// 		margin-bottom: 50px;
+// 		background-image: url("./bg-svg-f.svg");
+// 	}
+// 	.auth {
+// 		background-color: white;
+// 		border-radius: 5px;
+// 		height: auto;
+// 		min-height: 450px;
+// 		padding: 15px 30px 25px;
+// 	}
+// 	.text-danger {
+// 		text-align: center;
+// 		color: red;
+// 		font-family: monospace;
+// 	}
+// 	.explained {
+// 		padding-left: 25px;
+// 		p:first-child {
+// 			color: #fe8402;
+// 			margin-bottom: 5px;
+// 			font-size: 1.1rem;
+// 		}
+// 		h1 {
+// 			color: #4b456f;
+// 			font-size: 2.5rem;
+// 			margin-bottom: 25px;
+// 		}
+// 		button {
+// 			background-color: #fe8402;
+// 			border: none;
+// 			color: white;
+// 			border-radius: 5px;
+// 			padding: 5px 15px;
+// 		}
+// 	}
+// 	@media (max-width: 768px) {
+// 		.auth {
+// 			width: 90%;
+// 			margin: 25px auto;
+// 		}
+// 	}
+// `;
 export default Dashboard;
