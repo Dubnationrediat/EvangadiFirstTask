@@ -1,17 +1,17 @@
 import { useState, useRef } from "react";
-import styled from "styled-components";
+import './LogInSignUp.css'
 import { AiOutlineEye } from "react-icons/ai";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 
 
-function Auth() {
+function LogInSignUp() {
 
 
 	const [show, setShow] = useState(false);
 	const [loading, setLoading] = useState(false);
 
 	return (
-		<Wrapper>
+		<div className="loginSignUp">
 			<div id="carouselExample" className="carousel slide">
 				<div className="carousel-inner">
 					<div className="carousel-item active">
@@ -161,104 +161,9 @@ function Auth() {
 					</div>
 				</div>
 			</div>
-		</Wrapper>
+		</div>
 	);
 }
 
-const Wrapper = styled.section`
-	text-align: center;
-	span {
-		color: #fe8402;
-	}
-	span:hover {
-		text-decoration: underline;
-	}
-	form {
-		margin-top: 30px;
-	}
-	.form-input input {
-		padding: 10px 15px;
-		width: 100%;
-		margin-top: 15px;
-		border-radius: 5px;
-		border: 0.5px solid #cacaca;
-	}
 
-	.form-input input:focus {
-		outline: none;
-		border-bottom: 2px solid #fe8402;
-	}
-
-	.login > div,
-	.register > div {
-		padding: 0 10px;
-		font-size: 0.9rem;
-	}
-	.forgot a {
-		display: block;
-		text-decoration: none;
-		color: #fe8402;
-		text-align: right;
-		margin-top: 15px;
-	}
-	.forgot a:hover {
-		text-decoration: underline;
-	}
-
-	.btn-login > button {
-		font-size: 1rem;
-		padding: 5px 10px;
-		width: 100%;
-		border-radius: 5px;
-		border: none;
-		margin-top: 30px;
-		color: white;
-		background-color: #516cf0;
-	}
-
-	.btn-login > button:hover {
-		background-color: #fe8402;
-	}
-	.btn-register > button {
-		font-size: 1rem;
-		padding: 5px 10px;
-		width: 100%;
-		border-radius: 5px;
-		border: none;
-		margin-top: 20px;
-		color: white;
-		background-color: #516cf0;
-	}
-
-	.btn-register > button:hover {
-		background-color: #fe8402;
-	}
-	.privacy {
-		margin-top: 15px;
-		font-size: 0.7rem;
-		a {
-			color: #fe8402;
-		}
-	}
-	.password {
-		position: relative;
-	}
-	.password span {
-		position: absolute;
-		top: 35%;
-		right: 5%;
-		font-size: 1.2rem;
-		color: #848484;
-	}
-	.password span:hover {
-		color: #fe8402;
-	}
-	.disabled {
-		cursor: not-allowed;
-	}
-	.disabled:hover {
-		background-color: #848484 !important;
-	}
-`;
-
-export default Auth;
+export default LogInSignUp;

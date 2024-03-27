@@ -1,11 +1,20 @@
-.mainSection {
+/* .mainSection {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     padding-top: 15%;
     margin-bottom: 50px;
     background-image: url("./bg-svg-f.svg");
     height: 100vh;
+} */
+.mainSection {
+        background-image: url("./bg-svg-f.svg");
+        background-size: cover;
+        background-color: #f8f8f8;
+        height: 100vh;
+        padding-top: 12%;
 }
+
+
 .auth {
     background-color: white;
     border-radius: 5px;
@@ -37,6 +46,23 @@
         border-radius: 5px;
         padding: 5px 15px;
     }
+}
+.CreateNewAcc{
+    color: white;
+    text-decoration: none;
+}
+.CreateNewAcc:hover{
+
+    text-decoration: none;
+}
+
+.text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(310deg, #000000, #e33f00);
 }
 @media (max-width: 768px) {
     .auth {

@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "../assets/evangadi-logo-footer.png";
-import styled from "styled-components";
+import logo from "../../assets/evangadi-logo-footer.png";
+import './Footer.css'
 import { BiLogoFacebook } from "react-icons/bi";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillYoutube } from "react-icons/ai";
 function Footer() {
 	return (
-		<Wrapper>
+		<div className="footerMain">
 			<div className="container px-sm-4">
 				<div className="row">
 					<div className="col-12 col-md-4 ">
@@ -55,55 +55,9 @@ function Footer() {
 					</div>
 				</div>
 			</div>
-		</Wrapper>
+		</div>
 	);
 }
 
-const Wrapper = styled.footer`
-	padding: 60px 10px;
 
-	background-color: #3b455a;
-	.social {
-		border-radius: 50%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 45px;
-		height: 45px;
-		border: 1px solid white;
-		margin: 20px 12px;
-		transition: all 0.5s;
-	}
-	.social:hover {
-		cursor: pointer;
-		background-color: white;
-		a {
-			color: #3b455a;
-		}
-	}
-	.social a {
-		font-size: 1.8rem;
-		color: white;
-		margin-top: -10px;
-	}
-	.footer-links {
-		h5 {
-			color: white;
-		}
-		li {
-			list-style: none;
-			margin-left: -30px;
-			color: #939a9c;
-		}
-		a {
-			color: #939a9c;
-			text-decoration: none;
-			transition: all 0.5s;
-		}
-		a:hover {
-			text-decoration: underline;
-			color: white;
-		}
-	}
-`;
 export default Footer;

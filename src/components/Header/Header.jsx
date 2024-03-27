@@ -1,13 +1,13 @@
 import React from "react";
-import logo from "../assets/evangadi-logo.png";
-import styled from "styled-components";
+import logo from "../../assets/evangadi-logo.png";
+import './Header'
 import { Link } from "react-router-dom";
 
 
 function Header() {
 
 	return (
-		<Wrapper className="navbar navbar-expand-lg fixed-top shadow-sm">
+		<div className="navbar headerMain navbar-expand-lg fixed-top shadow-sm">
 			<div className="container px-md-4">
 				<Link className="navbar-brand" to="/home">
 					<img src={logo} alt="" />
@@ -50,45 +50,10 @@ function Header() {
 					</div>
 				</div>
 			</div>
-		</Wrapper>
+		</div>
 	);
 }
 
-const Wrapper = styled.header`
-	z-index: 999 !important;
-	width: 100%;
-	height: 85px;
-	background-color: white;
-	.navbar-toggler {
-		border: none;
-	}
-	img {
-		width: 80%;
-	}
-	.sign {
-		width: 200px;
-		background-color: #516cf0;
-		color: white;
-		border-radius: 5px;
-	}
-	.links a:hover {
-		color: #fe8402;
-	}
-	.sign:hover {
-		background-color: #fe8402;
-	}
-	.log-out {
-		padding-top: 5px;
-		font-size: 1.2rem;
-		color: #411c01;
-		font-weight: bold;
-		font-family: monospace;
-		transition: all 0.5s;
-	}
-	.log-out:hover {
-		cursor: pointer;
-		color: #fe8402;
-	}
-`;
+
 
 export default Header;
