@@ -11,17 +11,30 @@ span:hover {
 form {
   margin-top: 30px;
 }
+
 .form-input input {
   padding: 10px 15px;
   width: 100%;
   margin-top: 15px;
   border-radius: 5px;
   border: 0.5px solid #cacaca;
-}
-
-.form-input input:focus {
   outline: none;
-  border-bottom: 2px solid #fe8402;
+ 
+}
+ 
+.form-input input:focus {
+  animation: border-appear 0.2s forwards;
+  
+}
+@keyframes border-appear {
+  from {
+      border-bottom: 2px solid transparent; 
+      width: 0; 
+  }
+  to {
+      border-bottom: 2px solid #ff8500;
+      width: 100%; 
+  } 
 }
 
 .login > div,
